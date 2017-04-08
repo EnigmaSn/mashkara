@@ -1,0 +1,40 @@
+@mixin container() {
+	width: 1920px;
+	margin: 0 auto;
+
+	@media #{$desktop2-widths} {
+		width: 1440px;
+	}
+	@media #{$desktop3-widths} {
+		width: 1179px;
+	}
+	@media #{$desktop4-widths} {
+		width: 1023px;
+	}
+	@media #{$mob-widths} {
+		width: 428px;
+	}
+}
+
+@mixin side-padding {
+	padding-left: 15px;
+	padding-right: 15px;
+
+		@media #{$desktop-widths}
+		 {
+			padding-left: 30px;
+		 	padding-right: 30px;
+	  }
+}
+
+
+@mixin side-margin {
+	margin-left: 15px;
+	margin-right: 15px;
+
+		@media #{$desktop-widths}
+		 {
+			margin-left: 50px;
+		 	margin-right: 50px;
+	  }
+}
