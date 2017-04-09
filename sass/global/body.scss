@@ -5,14 +5,22 @@ body {
   margin: 0;
     h1,h2 {
       font-family: 'Forum', cursive;
+      font-weight: normal;
     }
     .fancybox-margin {
       margin-right: 0;
     }
 }
 
-@media #{$mob-widths} {
+
+@include respond-to($mob-widths) {
   body {
     min-width: 640px;
   }
 }
+
+//@media #{$mob-widths} {
+//  body {
+//    min-width: 640px;
+//  }
+//}

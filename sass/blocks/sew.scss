@@ -1,0 +1,49 @@
+.sew {
+  &__wrapper {
+    @include container;
+    margin-left: 236px;
+    //margin-bottom: 150px;
+    min-height: 520px;
+
+
+    div {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+    }
+    .sew__desktop {
+      position: absolute;
+      right: 500px;
+      top: -200px;
+      z-index: -1;
+    }
+
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 48px;
+      letter-spacing: 7px;
+      //text-align: center;
+      margin: 0px;
+    }
+    a {
+      display: none;
+    }
+    div:hover {
+      h2 {
+        width: auto;
+        border-bottom: 1px solid $black;
+        margin-bottom: -1px;
+        align-self: flex-start;
+      }
+      a {
+        display: block;
+        margin-top: 50px;
+      }
+    }
+  }
+  &__mob {
+    display: none;
+  }
+}

@@ -1,0 +1,43 @@
+.passion {
+  &__wrapper {
+    @include container;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 236px;
+    margin-bottom: 480px;
+
+    div {
+      width: 505px;
+      margin-top: 130px;
+      position: relative;
+
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 48px;
+      letter-spacing: 7px;
+      //text-align: center;
+      margin-bottom: 40px;
+      margin-top: 0;
+      width: 400px;
+    }
+    span {
+      width: 600px;
+      //text-align: center;
+      color: $gray2;
+      font-size: 20px;
+      line-height: 30px;
+      //margin-bottom: 240px;
+    }
+
+  }
+  &__karp-mob {
+     display: none;
+   }
+  &__karp-desktop {
+    position: absolute;
+    right: -1080px;
+    top: -250px;
+  }
+
+}

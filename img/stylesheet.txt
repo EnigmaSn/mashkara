@@ -1,0 +1,35 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-box {
+    width: 99px;
+    height: 33px;
+    background-position: -10px -10px;
+}
+
+.sprite-burger-black {
+    width: 30px;
+    height: 19px;
+    background-position: -5px -58px;
+}
+
+.sprite-burger-white {
+    width: 30px;
+    height: 19px;
+    background-position: -5px -87px;
+}
+
+.sprite-goto {
+    width: 176px;
+    height: 44px;
+    background-position: -10px -121px;
+}
+
+.sprite-s {
+    width: 249px;
+    height: 407px;
+    background-position: -10px -185px;
+}

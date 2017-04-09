@@ -1,7 +1,12 @@
+@mixin respond-to($media) {
+	@media only screen and #{$media} {
+		@content;
+	}
+}
+
 @mixin container() {
 	width: 1920px;
 	margin: 0 auto;
-
 	@media #{$desktop2-widths} {
 		width: 1440px;
 	}

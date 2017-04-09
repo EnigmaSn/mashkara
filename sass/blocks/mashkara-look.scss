@@ -1,0 +1,83 @@
+.mashkara-look {
+  &__wrapper {
+    @include container;
+    display: flex;
+    margin-left: 236px;
+  }
+  &__crab {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      margin-bottom: 145px;
+    }
+
+    span {
+      font-size: 42px;
+      line-height: 56px;
+      text-transform: uppercase;
+      //width: 372px;
+      //text-align: center;
+      align-self: center;
+      color: $black;
+      letter-spacing: 7px;
+    }
+  }
+  &__crab:hover {
+    img {
+      margin-top: 10px;
+      margin-bottom: 135px;
+    }
+    span {
+      border-bottom: 1px solid $black;
+      margin-bottom: -1px;
+    }
+  }
+  &__shop {
+    height: 880px;
+    width: 730px;
+    background-image: url("../img/green.jpg");
+    margin-left: 35px;
+    position: relative;
+    display: flex;
+
+    .mashkara-look__hover {
+      display: none;
+    }
+  }
+  &__active {
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 55px;
+    text-transform: uppercase;
+    margin: 55% 35px;
+    //width: 663px;
+    text-align: center;
+    letter-spacing: 7px;
+
+  }
+
+  &__shop:hover {
+    background-image: url("../img/green-hover.jpg");
+
+    .mashkara-look__active {
+      display: none;
+    }
+
+    .mashkara-look__hover {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 60% auto;
+
+      span {
+        color: $black;
+        font-size: 42px;
+        letter-spacing: 7px;
+        text-transform: uppercase;
+        margin-bottom: 45px;
+      }
+    }
+  }
+}

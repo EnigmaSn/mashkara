@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mashkara</title>
   <link href="https://fonts.googleapis.com/css?family=Forum&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
@@ -12,7 +13,7 @@
 
       <div class="page-header__mobile">
         <div class="page-header__menu-close">
-          <img src="logo.png" alt="logo">
+          <img src="img/logo.png" alt="logo" height="30" width="136">
           <button class="page-header__hamburger">Открыть меню</button>
         </div>
         <div class="page-header__menu-open">
@@ -46,14 +47,14 @@
 
       <div class="page-header__desktop">
         <div class="page-header__left">
-          <img src="logo.png" alt="logo">
+          <img src="img/logo.png" alt="logo">
           <span class="page-header__box"></span>
-          <a href="#">E-shop</a>
+          <a class="page-header__horizontal" href="#">E-shop</a>
           <a class="page-header__vertical" href="#">Instagram</a>
           <a class="page-header__vertical" href="#">Facebook</a>
         </div>
         <div class="page-header__right">
-          <button class="page-header__hamburger"></button>
+          <a class="page-header__hamburger"></a>
         </div>
       </div>
 
@@ -64,13 +65,17 @@
     <div class="mashkara-look">
       <div class="mashkara-look__wrapper">
         <div class="mashkara-look__crab">
-          <img src="crab.png" alt="crab">
-          <span>Загляните в Мастерскую MASHKARA</span>
+          <img src="img/crab.png" alt="crab">
+          <span>Загляните</span>
+          <span>в Мастерскую</span>
+          <span>MASHKARA</span>
         </div>
         <div class="mashkara-look__shop">
           <span class="mashkara-look__active">стать героиней истории mashkara</span>
-          <span class="mashkara-look__hover">mashkara</span>
-          <a class="button" href="#">Перейти в магазин</a>
+          <div class="mashkara-look__hover">
+            <span>mashkara</span>
+            <a class="button" href="#">Перейти в магазин</a>
+          </div>
         </div>
       </div>
     </div>
@@ -86,11 +91,13 @@
         <div class="mash-kara__desktop">
           <h2>Mash kara</h2>
   </span>
-          <span>
-          Мы создаем уникальные коллекции одежды под собственной маркой MASHKARA,
+          <span>Мы создаем уникальные коллекции одежды под собственной маркой MASHKARA,
   название которой сложилось из наших имен.
         </span>
-          <img src="img/mask-kara-desktop.png">
+          <div>
+            <img src="img/mash-kara-desktop.png">
+          </div>
+
         </div>
       </div>
     </div>
@@ -104,29 +111,42 @@
 
     <div class="dress">
       <div class="dress__wrapper">
-        <h2>воплощаем желания</h2>
-        <span>В ателье марки <a href="#">#mashkaraatelier</a> командой лучших конструкторов и портных мы создаем уникальную одежду от повседневных деловых костюмов, школьной формы до эксклюзивhfных кутюрных свадебных и вечерних платьев. В нашем ателье можно заказать пошив любой понравившейся модели из коллекций MASHKARA по индивидуальным меркам.</span>
+        <img src="img/dress.jpg" height="560" width="677"/>
+        <div>
+          <h2>воплощаем желания</h2>
+          <span>В ателье марки <a href="#">#mashkaraatelier</a> командой лучших конструкторов и портных мы создаем уникальную одежду от повседневных деловых костюмов, школьной формы до эксклюзивhfных кутюрных свадебных и вечерних платьев. В нашем ателье можно заказать пошив любой понравившейся модели из коллекций MASHKARA по индивидуальным меркам.</span>
+        </div>
       </div>
     </div>
 
     <div class="passion">
       <div class="passion__wrapper">
-        <img class="passion__karp-desktop" src="img/karp-desktop.png">
         <img class="passion__karp-mob" src="img/karp-mob.png" height="296" width="408">
-        <h2>наша страсть</h2>
-        <span>Каждый художник хранит в себе особый источник,
+        <div>
+          <img class="passion__karp-desktop" src="img/karp-desktop.png">
+          <h2>наша страсть</h2>
+          <span>Каждый художник хранит в себе особый источник,
 который питает его. Для нас это проявление нашей любви
 к изобразительному искусству в коллекциях MASHKARA.
 Мы переносим наше настроение и рисунки на ткани,
 создавая принты сезонных коллекций.</span>
+        </div>
       </div>
     </div>
 
     <div class="sew">
       <div class="sew__wrapper">
-        <img src="img/sew-mob.png" height="335" width="430">
-        <h2>Мы возрождаем портновские традиции и хотим изменить взгляд на модную индустриюв России</h2>
-        <a class="button" href="#">узнайте о производстве</a>
+        <img class="sew__mob" src="img/sew-mob.png" height="335" width="430">
+
+        <div>
+          <img class="sew__desktop" src="img/sew-desktop.png" height="680" width="893">
+          <h2>Мы возрождаем</h2>
+          <h2>портновские традиции</h2>
+          <h2>и хотим изменить взгляд</h2>
+          <h2>на модную индустрию</h2>
+          <h2>в России</h2>
+          <a class="button" href="#">узнайте о производстве</a>
+        </div>
       </div>
     </div>
 
