@@ -398,7 +398,8 @@ body {
     min-width: 411px; }
   .page-header .menu {
     padding-top: 165px;
-    padding-bottom: 318px; } }
+    padding-bottom: 318px;
+    background-size: contain; } }
 
 .page-footer {
   background-color: #58595b; }
