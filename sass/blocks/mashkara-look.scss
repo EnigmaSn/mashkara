@@ -3,10 +3,15 @@
     @include container;
     display: flex;
     margin-left: 236px;
+    margin-top: 120px;
   }
   &__crab {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
+    margin-right: 73px;
+
+
 
     img {
       margin-bottom: 145px;
@@ -20,7 +25,7 @@
       //text-align: center;
       align-self: center;
       color: $black;
-      letter-spacing: 7px;
+      letter-spacing: 5px;
     }
   }
   &__crab:hover {
@@ -37,7 +42,6 @@
     height: 880px;
     width: 730px;
     background-image: url("../img/green.jpg");
-    margin-left: 35px;
     position: relative;
     display: flex;
 
@@ -53,7 +57,7 @@
     margin: 55% 35px;
     //width: 663px;
     text-align: center;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
 
   }
 
@@ -74,7 +78,7 @@
       span {
         color: $black;
         font-size: 42px;
-        letter-spacing: 7px;
+        letter-spacing: 5px;
         text-transform: uppercase;
         margin-bottom: 45px;
       }

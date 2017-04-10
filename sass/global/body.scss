@@ -3,6 +3,58 @@ body {
   color: #000000;
   width: 100%;
   margin: 0;
+
+  position: relative;
+  .line {
+    position: absolute;
+    z-index: -2;
+    height: 100%;
+    border-left: 1px solid $gray;
+    opacity: 0.1;
+  }
+  .line1 {
+    left: 236px;
+  }
+  .line2 {
+    left: 295px;
+  }
+  .line3 {
+    left: 494px;
+  }
+  .line4 {
+    left: 542px;
+  }
+  .line5 {
+    left: 705px;
+  }
+  .line6 {
+    left: 796px;
+  }
+  .line7 {
+    left: 971px;
+  }
+  .line8 {
+    left: 1051px;
+  }
+  .line9 {
+    left: 1240px;
+  }
+  .line10 {
+    left: 1270px;
+  }
+  .line11 {
+    left: 1465px;
+  }
+  .line12 {
+    left: 1509px;
+  }
+  .line13 {
+    left: 1703px;
+  }
+  .line14 {
+    left: 1725px;
+  }
+
     h1,h2 {
       font-family: 'Forum', cursive;
       font-weight: normal;
