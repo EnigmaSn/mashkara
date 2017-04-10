@@ -8,13 +8,14 @@
 	width: 1408px;
 	margin: 0 auto;
 	@media #{$desktop2-widths} {
-		width: 1440px;
+		//width: 1244px;
+		width: 1000px;
 	}
 	@media #{$desktop3-widths} {
 		width: 1179px;
 	}
 	@media #{$desktop4-widths} {
-		width: 1023px;
+		width: 1022px;
 	}
 	@media #{$mob-widths} {
 		width: 428px;

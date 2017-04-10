@@ -6,6 +6,7 @@
   <title>Mashkara</title>
   <link href="https://fonts.googleapis.com/css?family=Forum&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/jquery-3.2.0.min.js"></script>
 </head>
 <body>
   <div class="line line1"></div>
@@ -76,8 +77,8 @@
               <span>2017</span>
             </div>
           </div>
-          <div class="page-header__look2">
-            <a class="page-header__arrow"></a>
+          <div class="page-header__look2 sticky-wrapper">
+            <a id="sticker" class="page-header__arrow"></a>
           </div>
         </div>
         <div class="page-header__right">
@@ -111,7 +112,7 @@
     </div>
   </header>
 
-  <main>
+  <main id="stopper">
     <div class="mashkara-look">
       <div class="mashkara-look__wrapper">
         <div class="mashkara-look__crab">
@@ -229,5 +230,8 @@
       <span>© 2017, Mashkara.    Made by <a href="#">xDesign</a></span>
     </div>
   </footer>
+  <script src="js/jquery-3.2.0.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

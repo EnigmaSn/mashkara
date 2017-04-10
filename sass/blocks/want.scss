@@ -32,3 +32,19 @@
 
   }
 }
+
+@media #{$desktop2-widths} {
+  .want {
+    &__wrapper {
+      margin-left: 376px;
+    }
+  }
+}
+
+@media #{$desktop2-widths} {
+  .want {
+    &__wrapper {
+      margin-left: 300px;
+    }
+  }
+}

@@ -41,3 +41,29 @@
     }
   }
 }
+
+@media #{$desktop2-widths} {
+  .mash-kara {
+    &__wrapper {
+      margin-left: 320px;
+    }
+    &__desktop {
+      div {
+        width: 1164px;
+        height: 472px;
+
+        img {
+          width: 1000px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$desktop3-widths} {
+  .mash-kara {
+    &__wrapper {
+      margin-left: 409px;
+    }
+  }
+}

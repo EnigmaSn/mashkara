@@ -3,13 +3,15 @@ body {
   color: #000000;
   width: 100%;
   margin: 0;
+  //background-color: lightgreen;
 
   position: relative;
   .line {
     position: absolute;
-    z-index: -2;
+    z-index: -1;
     height: 100%;
     border-left: 1px solid $gray;
+    //border-left: 1px solid red;
     opacity: 0.1;
   }
   .line1 {
@@ -64,15 +66,56 @@ body {
     }
 }
 
-
-@include respond-to($mob-widths) {
+@media #{$desktop2-widths} {
   body {
-    min-width: 640px;
+    .line1 {
+      left: 180px;
+    }
+    .line2 {
+      left: 239px;
+      //border-color: red;
+
+    }
+    .line3 {
+      left: 328px;
+      display: none;
+    }
+    .line4 {
+      left: 476px;
+      display: none;
+    }
+    .line5 {
+      left: 700px;
+    }
+    .line6 {
+      left: 740px;
+    }
+    .line7 {
+      left: 873px;
+      //border-color: red;
+    }
+    .line8 {
+      left: 913px;
+    }
+    .line9 {
+      left: 1014px;
+      display: none;
+    }
+    .line10 {
+      left: 1059px;
+      display: none;
+    }
+    .line11 {
+      left: 1014px;
+    }
+    .line12 {
+      left: 1059px;
+    }
+    .line13 {
+      left: 1402px;
+    }
+    .line14 {
+      left: 1424px;
+    }
   }
 }
-
-//@media #{$mob-widths} {
-//  body {
-//    min-width: 640px;
-//  }
-//}

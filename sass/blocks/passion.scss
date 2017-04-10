@@ -39,5 +39,17 @@
     right: -1080px;
     top: -250px;
   }
+}
 
+@media #{$desktop2-widths} {
+  .passion {
+    &__wrapper {
+      margin-left: 239px;
+      margin-bottom: 290px;
+    }
+    &__karp-desktop {
+      right: -820px;
+      width: 700px;
+    }
+  }
 }

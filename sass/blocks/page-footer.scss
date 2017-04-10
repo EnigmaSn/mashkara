@@ -1,5 +1,6 @@
 .page-footer {
   background-color: #58595b;
+
   &__wrapper {
     @include container;
     position: relative;
@@ -63,6 +64,16 @@
         text-transform: none;
         font-size: 16px;
       }
+    }
+  }
+}
+
+@media #{$desktop2-widths} {
+  .page-footer {
+    min-width: 100%;
+
+    &__wrapper {
+
     }
   }
 }

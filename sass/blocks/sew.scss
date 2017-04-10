@@ -47,3 +47,19 @@
     display: none;
   }
 }
+
+@media #{$desktop2-widths} {
+  .sew {
+    &__wrapper {
+      margin-left: 239px;
+      margin-bottom: 60px;
+
+      .sew__desktop {
+        top: -90px;
+        left: 501px;
+        width: 640px;
+        height: auto;
+      }
+    }
+  }
+}

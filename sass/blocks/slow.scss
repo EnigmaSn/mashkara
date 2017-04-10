@@ -41,3 +41,19 @@
     z-index: -1;
   }
 }
+
+@media #{$desktop2-widths} {
+  .slow {
+    &__wrapper {
+      margin-left: 376px;
+    }
+  }
+}
+
+@media #{$desktop3-widths} {
+  .slow {
+    &__wrapper {
+      margin-left: 409px;
+    }
+  }
+}
