@@ -317,9 +317,45 @@
     }
     &__center {
       margin-left: 180px;
-      display: flex;
-      width: auto;
     }
+    &__look1 {
+      background-size: cover;
+      background-position-x: right;
+      min-width: 650px;
+      height: 620px;
+      margin-right: 39px;
+    }
+    &__look2 {
+      width: 411px;
+      height: 620px;
+      background-position-x: right;
+      background-position-y: bottom;
+
+      a {
+        top: 310px;
+        left: 50px;
+        //left: 80px;
+      }
+    }
+    &__look2:hover {
+      a {
+        left: 80px;
+      }
+    }
+    .menu {
+      padding-top: 165px;
+      padding-bottom: 318px;
+      background-size: contain;
+    }
+  }
+}
+
+@media #{$desktop3-widths} {
+  .page-header {
+    &__left {
+      background-color: green;
+    }
+
     &__look1 {
       background-size: cover;
       background-position-x: right;
@@ -357,10 +393,3 @@
     }
   }
 }
-
-
-//@include respond-to($desktop2-widths) {
-//
-//
-//}
-

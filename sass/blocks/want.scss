@@ -26,10 +26,10 @@
   &__mob {
     display: none;
   }
-  &__desktop {margin: 0 auto;
+  &__desktop {
+    margin: 0 auto;
     margin-top: 105px;
     margin-bottom: 90px;
-
   }
 }
 
@@ -41,10 +41,22 @@
   }
 }
 
-@media #{$desktop2-widths} {
+@media #{$desktop3-widths} {
   .want {
     &__wrapper {
-      margin-left: 300px;
+      margin-left: 220px;
+
+      span {
+        width: 900px;
+      }
+    }
+    &__desktop {
+      //margin: 0 auto;
+      margin-top: 80px;
+      margin-left: 50px;
+      //margin-bottom: 90px;
+      width: 800px;
+      height: auto;
     }
   }
 }

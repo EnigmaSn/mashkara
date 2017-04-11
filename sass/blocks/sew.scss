@@ -20,7 +20,7 @@
     }
 
 
-    h2 {
+    h3 {
       text-transform: uppercase;
       font-size: 48px;
       letter-spacing: 5px;
@@ -58,6 +58,27 @@
         top: -90px;
         left: 501px;
         width: 640px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media #{$desktop3-widths} {
+  .sew {
+    &__wrapper {
+      margin-left: 220px;
+      margin-bottom: 60px;
+
+      h3 {
+        font-size: 35px;
+      }
+
+      .sew__desktop {
+        top: -60px;
+        //left: 477px;
+        left: 437px;
+        width: 500px;
         height: auto;
       }
     }

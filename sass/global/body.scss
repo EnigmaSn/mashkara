@@ -57,7 +57,7 @@ body {
     left: 1725px;
   }
 
-    h1,h2 {
+    h1,h2,h3 {
       font-family: 'Forum', cursive;
       font-weight: normal;
     }
@@ -121,3 +121,41 @@ body {
     }
   }
 }
+
+@media #{$desktop3-widths} {
+  body {
+    .line1 {
+      left: 180px;
+    }
+    .line2 {
+      left: 220px;
+    }
+    .line5 {
+      left: 525px;
+    }
+    .line6 {
+      left: 565px;
+    }
+    .line7 {
+      left: 657px;
+    }
+    .line8 {
+      left: 697px;
+    }
+    .line11 {
+      left: 899px;
+    }
+    .line12 {
+      left: 939px;
+    }
+    .line13 {
+      left: 1131px;
+    }
+    .line14 {
+      left: 1151px;
+    }
+  }
+}
+
+
+

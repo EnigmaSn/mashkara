@@ -13,7 +13,7 @@
     div {
       //min-width: 1400px;
     }
-    h2 {
+    h3 {
       text-transform: uppercase;
       font-size: 48px;
       letter-spacing: 5px;
@@ -48,6 +48,27 @@
       }
       div {
         min-width: 500px;
+      }
+    }
+  }
+}
+
+@media #{$desktop3-widths} {
+  .dress {
+    &__wrapper {
+      margin-left: 280px;
+
+      h3 {
+        font-size: 35px;
+      }
+
+      img {
+        width: 345px;
+        height: 300px;
+        margin-right: 90px;
+      }
+      div {
+        min-width: 485px;
       }
     }
   }

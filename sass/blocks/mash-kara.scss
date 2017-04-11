@@ -63,7 +63,20 @@
 @media #{$desktop3-widths} {
   .mash-kara {
     &__wrapper {
-      margin-left: 409px;
+      margin-left: 276px;
+    }
+    &__desktop {
+      span {
+        margin-bottom: 180px;
+      }
+      div {
+        width: 911px;
+        height: 425px;
+
+        img {
+          width: 900px;
+        }
+      }
     }
   }
 }
