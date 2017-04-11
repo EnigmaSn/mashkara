@@ -433,8 +433,6 @@ body {
     background-size: contain; } }
 
 @media (max-width: 1470px) {
-  .page-header__left {
-    background-color: green; }
   .page-header__look1 {
     background-size: cover;
     background-position-x: right;
