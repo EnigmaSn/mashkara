@@ -157,5 +157,41 @@ body {
   }
 }
 
+@media #{$desktop4-widths} {
+  body {
+    .line1 {
+      left: 150px;
+    }
+    .line2 {
+      left: 190px;
+    }
+    .line5 {
+      left: 497px;
+    }
+    .line6 {
+      left: 575px;
+    }
+    .line7 {
+      left: 657px;
+    }
+    .line8 {
+      left: 697px;
+    }
+    .line11 {
+      left: 799px;
+    }
+    .line12 {
+      left: 820px;
+    }
+    .line13 {
+      left: 950px;
+    }
+    .line14 {
+      left: 970px;
+      //border-color: red;
+    }
+  }
+}
+
 
 

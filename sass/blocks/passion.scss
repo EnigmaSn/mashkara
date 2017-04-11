@@ -75,3 +75,28 @@
     }
   }
 }
+
+@media #{$desktop4-widths} {
+  .passion {
+    &__wrapper {
+      margin-left: 190px;
+      //margin-bottom: 190px;
+
+      //h3 {
+      //  font-size: 35px;
+      //}
+
+      div {
+        width: 380px;
+      }
+      span {
+        font-size: 18px;
+      }
+    }
+    &__karp-desktop {
+      right: -440px;
+      top: -50px;
+      width: 440px;
+    }
+  }
+}

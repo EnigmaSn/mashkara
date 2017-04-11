@@ -9,6 +9,7 @@
 
     img {
       margin-right: 78px;
+      height: 100%;
     }
     div {
       //min-width: 1400px;
@@ -43,7 +44,7 @@
 
       img {
         width: 634px;
-        height: auto;
+        height: 100%;
         margin-right: 40px;
       }
       div {
@@ -64,11 +65,31 @@
 
       img {
         width: 345px;
-        height: 300px;
+        height: 100%;
         margin-right: 90px;
       }
       div {
         min-width: 485px;
+      }
+    }
+  }
+}
+
+@media #{$desktop4-widths} {
+  .dress {
+    &__wrapper {
+      margin-left: 249px;
+
+      img {
+        height: 100%;
+        width: 307px;
+        margin-right: 80px;
+      }
+      div {
+        min-width: 380px;
+      }
+      span {
+        font-size: 18px;
       }
     }
   }

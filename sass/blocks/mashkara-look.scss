@@ -140,3 +140,38 @@
     }
   }
 }
+
+@media #{$desktop4-widths} {
+  .mashkara-look {
+    &__wrapper {
+      margin-top: 80px;
+    }
+    &__crab {
+      margin-right: 15px;
+      margin-left: -20px;
+
+      img {
+        margin-bottom: 45px;
+        width: 400px;
+      }
+      span {
+        font-size: 30px;
+      }
+    }
+    &__crab:hover {
+      img {
+        margin-top: 10px;
+        margin-bottom: 35px;
+      }
+    }
+    &__shop {
+      height: 600px;
+      min-width: 376px;
+      max-width: 376px;
+      background-size: cover;
+    }
+    &__active {
+      font-size: 30px;
+    }
+  }
+}

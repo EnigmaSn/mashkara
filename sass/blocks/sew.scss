@@ -76,9 +76,37 @@
 
       .sew__desktop {
         top: -60px;
-        //left: 477px;
         left: 437px;
         width: 500px;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media #{$desktop4-widths} {
+  .sew {
+    &__wrapper {
+      margin-left: 190px;
+      min-height: 300px;
+      //margin-bottom: 0px;
+
+      h3 {
+        font-size: 30px;
+      }
+
+      div:hover {
+        a {
+          display: block;
+          margin-top: 30px;
+        }
+      }
+
+      .sew__desktop {
+        top: -50px;
+        //left: 477px;
+        left: 385px;
+        width: 440px;
         height: auto;
       }
     }

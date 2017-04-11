@@ -61,3 +61,17 @@
     }
   }
 }
+
+@media #{$desktop4-widths} {
+  .slow {
+    &__wrapper {
+      margin-left: 250px;
+      margin-top: 190px;
+      margin-bottom: 190px;
+
+      span {
+        width: 750px;
+      }
+    }
+  }
+}

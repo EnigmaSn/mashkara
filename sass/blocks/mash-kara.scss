@@ -80,3 +80,27 @@
     }
   }
 }
+
+@media #{$desktop4-widths} {
+  .mash-kara {
+    &__wrapper {
+      margin-left: 245px;
+    }
+    &__desktop {
+      h2 {
+        margin-top: 90px;
+      }
+      span {
+        margin-bottom: 140px;
+      }
+      div {
+        width: 759px;
+        height: 354px;
+
+        img {
+          width: 750px;
+        }
+      }
+    }
+  }
+}
