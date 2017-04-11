@@ -1,5 +1,5 @@
 .page-header {
-  min-height: 820px;
+  //min-height: 820px;
   &__wrapper {
     position: relative;
     //@include container;
@@ -89,8 +89,8 @@
       height: 44px;
       background-position: -10px -121px;
       position: absolute;
-      top: 400px;
-      right: 135px;
+      top: 410px;
+      left: 100px;
 
       .sticky {
         position: fixed;
@@ -112,8 +112,8 @@
       background: rgba(0,0,0,0.5);
     }
     a {
-      top: 400px;
-      right: 105px;
+      //top: 400px;
+      left: 130px;
       z-index: 5;
     }
   }
@@ -221,7 +221,7 @@
 
   //МЕНЮ
   .menu {
-    //display: none;
+    display: none;
     position: absolute;
     padding-top: 265px;
     padding-bottom: 518px;
@@ -321,11 +321,34 @@
       width: auto;
     }
     &__look1 {
-      min-width: 800px;
-      //margin-right: 29px;
+      background-size: cover;
+      background-position-x: right;
+      min-width: 650px;
+      height: 620px;
+      margin-right: 39px;
+
+      div {
+        bottom: 150px;
+      }
+
+
     }
     &__look2 {
-      min-width: 411px;
+      width: 411px;
+      height: 620px;
+      background-position-x: right;
+      background-position-y: bottom;
+
+      a {
+        top: 310px;
+        left: 50px;
+        //left: 80px;
+      }
+    }
+    &__look2:hover {
+      a {
+        left: 80px;
+      }
     }
     .menu {
       padding-top: 165px;
