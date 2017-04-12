@@ -483,11 +483,14 @@
 @media #{$tablet-widths} {
   .page-header {
     height: 500px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
     &__mobile {
       display: block;
       position: relative;
-      //position: fixed;
-      //top: 0px;
+
       //left: auto;
       //margin: 0 auto;
       //z-index: 7000px;
@@ -586,6 +589,7 @@
     }
 
     &__mob-open {
+      display: none;
       background-color: #efefef;
     }
     &__menu-wrapper {

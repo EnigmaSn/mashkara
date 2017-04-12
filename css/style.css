@@ -555,7 +555,10 @@ body {
 
 @media (max-width: 768px) {
   .page-header {
-    height: 500px; }
+    height: 500px;
+    position: fixed;
+    top: 0;
+    width: 100%; }
     .page-header__mobile {
       display: block;
       position: relative; }
@@ -644,6 +647,7 @@ body {
         -o-transition: all .35s ease;
         -ms-transition: all .3s ease; }
     .page-header__mob-open {
+      display: none;
       background-color: #efefef; }
     .page-header__menu-wrapper {
       width: 1408px;
