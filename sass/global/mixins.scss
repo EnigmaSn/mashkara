@@ -20,8 +20,9 @@
 	@media #{$desktop5-widths} {
 		width: 450px;
 	}
-	@media #{$mob-widths} {
-		width: 428px;
+	@media #{$tablet-widths} {
+		width: 500px;
+		//background-color: chocolate;
 	}
 }
 

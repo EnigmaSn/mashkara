@@ -229,5 +229,13 @@ body {
   }
 }
 
+@media #{$tablet-widths} {
+  body {
+    .line {
+      display: none;
+    }
+  }
+}
+
 
 
