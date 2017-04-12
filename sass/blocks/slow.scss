@@ -75,3 +75,21 @@
     }
   }
 }
+
+@media #{$desktop5-widths} {
+  .slow {
+    &__wrapper {
+      margin-left: 190px;
+      margin-top: 150px;
+      margin-bottom: 190px;
+      h2 {
+        font-size: 45px;
+      }
+
+      span {
+        font-size: 18px;
+        width: 600px;
+      }
+    }
+  }
+}

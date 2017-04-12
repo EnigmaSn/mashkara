@@ -111,4 +111,33 @@
       }
     }
   }
+
+  @media #{$desktop5-widths} {
+    .sew {
+      &__wrapper {
+        margin-left: 110px;
+        margin-bottom: 0px;
+
+        h3 {
+          font-size: 30px;
+        }
+
+        div {
+          width: 500px;
+        }
+
+        div:hover {
+          a {
+            margin-top: 23px;
+          }
+        }
+
+        .sew__desktop {
+          top: -15px;
+          left: 322px;
+          width: 325px;
+        }
+      }
+    }
+  }
 }

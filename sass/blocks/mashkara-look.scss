@@ -175,3 +175,58 @@
     }
   }
 }
+
+@media #{$desktop5-widths} {
+  .mashkara-look {
+    &__wrapper {
+      margin-top: 40px;
+      margin-left: 80px;
+    }
+    &__crab {
+      margin-left: 7px;
+
+      img {
+        margin-bottom: 25px;
+        width: 300px;
+      }
+      span {
+        font-size: 25px;
+        line-height: 45px;
+        margin-left: -20px;
+      }
+    }
+    &__crab:hover {
+      img {
+        margin-bottom: 15px;
+      }
+    }
+    &__shop {
+      height: 450px;
+      min-width: 320px;
+      max-width: 320px;
+      //background-size: cover;
+    }
+    &__active {
+      font-size: 25px;
+      line-height: 45px;
+      margin: 45% 35px;
+    }
+    &__shop:hover {
+      .mashkara-look__hover {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 60% auto;
+
+        span {
+          color: $black;
+          font-size: 35px;
+          letter-spacing: 5px;
+          text-transform: uppercase;
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

@@ -16,17 +16,18 @@
     width: 236px;
     background-color: #fff;
 
-    img {
+    img:first-child {
       margin-top: 50px;
       margin-bottom: 119px;
     }
   }
   &__box {
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
+    //background-image: url("../img/spritesheet.png");
+    //background-repeat: no-repeat;
     display: block;
     width: 99px;
-    height: 33px;
+    //height: 33px;
+    height: 100%;
     background-position: -10px -10px;
     margin-bottom: 100px;
   }
@@ -422,6 +423,61 @@
     &__look2:hover {
       a {
         left: 50px;
+      }
+    }
+  }
+}
+
+@media #{$desktop5-widths} {
+  .page-header {
+    &__left {
+      width: 80px;
+      background-color: lightgreen;
+
+      img:first-child {
+        width: 60px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+      }
+
+    }
+    &__box {
+      width: 60px;
+      margin-bottom: 50px;
+    }
+    &__horizontal {
+      margin-bottom: 50px;
+    }
+    &__vertical {
+      margin-bottom: 50px;
+    }
+
+    &__center {
+      margin-left: 80px;
+    }
+    &__look1 {
+      background-size: cover;
+      background-position-x: right;
+      min-width: 400px;
+      height: 457px;
+
+      div {
+        bottom: 100px;
+      }
+    }
+    &__look2 {
+      background-position-x: center;
+      background-position-y: 80%;
+      height: 457px;
+
+      a {
+        top: 210px;
+        left: 20px;
+      }
+    }
+    &__look2:hover {
+      a {
+        left: 30px;
       }
     }
   }

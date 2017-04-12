@@ -94,3 +94,27 @@
     }
   }
 }
+
+@media #{$desktop5-widths} {
+  .dress {
+    &__wrapper {
+      margin-left: 205px;
+
+      img {
+        height: 100%;
+        width: 230px;
+        margin-right: 62px;
+      }
+      div {
+        min-width: 350px;
+      }
+      h3 {
+        font-size: 30px;
+        margin-bottom: 25px;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -100,3 +100,31 @@
     }
   }
 }
+
+@media #{$desktop5-widths} {
+  .passion {
+    &__wrapper {
+      margin-left: 111px;
+      margin-bottom: 90px;
+
+      h3 {
+        font-size: 30px;
+        margin-bottom: 25px;
+      }
+
+      div {
+        min-width: 300px;
+        max-width: 300px;
+        margin-top: 80px;
+      }
+      span {
+        font-size: 16px;
+      }
+    }
+    &__karp-desktop {
+      right: -345px;
+      top: -20px;
+      width: 330px;
+    }
+  }
+}
