@@ -355,7 +355,6 @@
 @media #{$desktop3-widths} {
   .page-header {
     &__left {
-      //background-color: green;
     }
 
     &__look1 {
@@ -400,7 +399,6 @@
   .page-header {
     &__left {
       width: 150px;
-      //background-color: lightgreen;
     }
     &__center {
       margin-left: 150px;
@@ -432,7 +430,6 @@
   .page-header {
     &__left {
       width: 80px;
-      background-color: lightgreen;
 
       img:first-child {
         width: 60px;

@@ -98,11 +98,11 @@
 @media #{$desktop5-widths} {
   .dress {
     &__wrapper {
-      margin-left: 205px;
+      margin-left: 216px;
 
       img {
         height: 100%;
-        width: 230px;
+        width: 229px;
         margin-right: 62px;
       }
       div {
@@ -110,6 +110,7 @@
       }
       h3 {
         font-size: 30px;
+        width: 200px;
         margin-bottom: 25px;
       }
       span {

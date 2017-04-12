@@ -526,8 +526,7 @@ body {
 
 @media (max-width: 1023px) {
   .page-header__left {
-    width: 80px;
-    background-color: lightgreen; }
+    width: 80px; }
     .page-header__left img:first-child {
       width: 60px;
       margin-top: 30px;
@@ -933,7 +932,7 @@ body {
 
 @media (max-width: 1023px) {
   .mash-kara__wrapper {
-    margin-left: 190px; }
+    margin-left: 201px; }
   .mash-kara__desktop h2 {
     margin-top: 50px;
     margin-bottom: 30px;
@@ -1020,7 +1019,7 @@ body {
 
 @media (max-width: 1023px) {
   .slow__wrapper {
-    margin-left: 190px;
+    margin-left: 199px;
     margin-top: 150px;
     margin-bottom: 190px; }
     .slow__wrapper h2 {
@@ -1105,15 +1104,16 @@ body {
 
 @media (max-width: 1023px) {
   .dress__wrapper {
-    margin-left: 205px; }
+    margin-left: 216px; }
     .dress__wrapper img {
       height: 100%;
-      width: 230px;
+      width: 229px;
       margin-right: 62px; }
     .dress__wrapper div {
       min-width: 350px; }
     .dress__wrapper h3 {
       font-size: 30px;
+      width: 200px;
       margin-bottom: 25px; }
     .dress__wrapper span {
       font-size: 16px; } }
@@ -1392,12 +1392,12 @@ body {
 
 @media (max-width: 1023px) {
   .want__wrapper {
-    margin-left: 190px; }
+    margin-left: 200px; }
     .want__wrapper h2 {
       font-size: 45px; }
     .want__wrapper span {
-      width: 620px;
+      width: 615px;
       font-size: 16px; }
   .want__desktop {
-    margin-left: 0px;
+    margin-left: -50px;
     width: 500px; } }
