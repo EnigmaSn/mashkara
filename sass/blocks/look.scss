@@ -1,3 +1,7 @@
+.look {
+  display: none;
+}
+
 @media #{$tablet-widths} {
   .look {
     @include container;

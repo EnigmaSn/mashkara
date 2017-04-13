@@ -351,11 +351,10 @@ body {
     border-radius: 2px;
     height: 2px;
     /* top: 2px; */
-    background: #000; }
+    background: gray; }
   .page-header .bar {
     position: relative;
     transform: translateY(33px) translateX(25px);
-    background: #FFFFFF;
     transition: all 0ms 300ms; }
   .page-header .bar.animate {
     background: transparent; }
@@ -364,20 +363,17 @@ body {
     position: absolute;
     left: 0;
     bottom: 8px;
-    background: #FFFFFF;
     transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
   .page-header .bar:after {
     content: "";
     position: absolute;
     left: 0;
     top: 8px;
-    background: #FFFFFF;
     transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
   .page-header .bar.animate:after {
     top: 0;
     width: 42px;
-    top: 0px;
-    left: 0px;
+    left: 0;
     transform: rotate(45deg);
     transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
   .page-header .bar.animate:before {
@@ -577,6 +573,10 @@ body {
     @media (max-width: 768px) and (max-width: 768px) {
       .page-header__mobile {
         width: 490px; } }
+    @media (max-width: 768px) and (max-width: 640px) {
+      .page-header__mobile {
+        width: 370px;
+        background-color: green; } }
 
 @media (max-width: 768px) {
     .page-header__top-wrapper {
@@ -584,7 +584,8 @@ body {
       margin: 0 auto;
       box-sizing: border-box;
       display: flex;
-      flex-direction: row; } }
+      flex-direction: row;
+      background-color: #fff; } }
     @media (max-width: 768px) and (max-width: 1880px) {
       .page-header__top-wrapper {
         width: 1000px; } }
@@ -600,6 +601,10 @@ body {
     @media (max-width: 768px) and (max-width: 768px) {
       .page-header__top-wrapper {
         width: 490px; } }
+    @media (max-width: 768px) and (max-width: 640px) {
+      .page-header__top-wrapper {
+        width: 370px;
+        background-color: green; } }
 
 @media (max-width: 768px) {
     .page-header__logo {
@@ -608,8 +613,7 @@ body {
       margin-left: 28px; }
     .page-header__top {
       position: fixed;
-      top: 0;
-      background-color: #efefef; }
+      top: 0; }
       .page-header__top .hamburger-menu {
         left: 80%;
         top: 10px;
@@ -669,7 +673,7 @@ body {
         -o-transition: all .35s ease;
         -ms-transition: all .3s ease; }
     .page-header .page-header__mob-open {
-      display: none;
+      margin-top: 100px;
       background-color: #efefef; }
     .page-header .page-header__mob-open .open-mob {
       display: block;
@@ -704,6 +708,10 @@ body {
     @media (max-width: 768px) and (max-width: 768px) {
       .page-header__menu-wrapper {
         width: 490px; } }
+    @media (max-width: 768px) and (max-width: 640px) {
+      .page-header__menu-wrapper {
+        width: 370px;
+        background-color: green; } }
 
 @media (max-width: 768px) {
     .page-header__mob-menu {
@@ -764,10 +772,18 @@ body {
     @media (max-width: 768px) and (max-width: 768px) {
       .page-header__look {
         width: 490px; } }
+    @media (max-width: 768px) and (max-width: 640px) {
+      .page-header__look {
+        width: 370px;
+        background-color: green; } }
 
 @media (max-width: 768px) {
       .page-header__look img {
         margin-bottom: 25px; } }
+
+@media (max-width: 640px) {
+  .page-header {
+    background-color: crimson; } }
 
 .page-footer {
   background-color: #58595b; }
@@ -795,6 +811,10 @@ body {
     @media (max-width: 768px) {
       .page-footer__wrapper {
         width: 490px; } }
+    @media (max-width: 640px) {
+      .page-footer__wrapper {
+        width: 370px;
+        background-color: green; } }
     .page-footer__wrapper ul, .page-footer__wrapper li {
       margin: 0;
       padding: 0;
@@ -925,6 +945,9 @@ body {
         font-size: 15px;
         line-height: 40px; } }
 
+.look {
+  display: none; }
+
 @media (max-width: 768px) {
   .look {
     width: 1408px;
@@ -949,6 +972,10 @@ body {
   @media (max-width: 768px) and (max-width: 768px) {
     .look {
       width: 490px; } }
+  @media (max-width: 768px) and (max-width: 640px) {
+    .look {
+      width: 370px;
+      background-color: green; } }
 
 @media (max-width: 768px) {
     .look__1 {
@@ -1015,6 +1042,10 @@ body {
   @media (max-width: 768px) {
     .mashkara-look__wrapper {
       width: 490px; } }
+  @media (max-width: 640px) {
+    .mashkara-look__wrapper {
+      width: 370px;
+      background-color: green; } }
 
 .mashkara-look__crab {
   display: flex;
@@ -1199,6 +1230,10 @@ body {
     margin: 65% 0;
     line-height: 25px; } }
 
+@media (max-width: 640px) {
+  .mashkara-look__crab img {
+    padding-left: 0px; } }
+
 .mash-kara__wrapper {
   width: 1408px;
   margin: 0 auto;
@@ -1218,6 +1253,10 @@ body {
   @media (max-width: 768px) {
     .mash-kara__wrapper {
       width: 490px; } }
+  @media (max-width: 640px) {
+    .mash-kara__wrapper {
+      width: 370px;
+      background-color: green; } }
 
 .mash-kara__mob {
   display: none; }
@@ -1353,6 +1392,10 @@ body {
   @media (max-width: 768px) {
     .slow__wrapper {
       width: 490px; } }
+  @media (max-width: 640px) {
+    .slow__wrapper {
+      width: 370px;
+      background-color: green; } }
 
 .slow h2 {
   text-transform: uppercase;
@@ -1448,6 +1491,10 @@ body {
   @media (max-width: 768px) {
     .dress__wrapper {
       width: 490px; } }
+  @media (max-width: 640px) {
+    .dress__wrapper {
+      width: 370px;
+      background-color: green; } }
   .dress__wrapper img {
     margin-right: 78px;
     height: 100%; }
@@ -1561,6 +1608,10 @@ body {
   @media (max-width: 768px) {
     .passion__wrapper {
       width: 490px; } }
+  @media (max-width: 640px) {
+    .passion__wrapper {
+      width: 370px;
+      background-color: green; } }
   .passion__wrapper div {
     width: 505px;
     margin-top: 130px;
@@ -1685,6 +1736,10 @@ body {
   @media (max-width: 768px) {
     .sew__wrapper {
       width: 490px; } }
+  @media (max-width: 640px) {
+    .sew__wrapper {
+      width: 370px;
+      background-color: green; } }
   .sew__wrapper div {
     display: flex;
     flex-direction: column;
@@ -1792,6 +1847,11 @@ body {
     margin-left: 65px;
     margin-bottom: 48px; } }
 
+@media (max-width: 640px) {
+  .sew__mob {
+    width: 370px;
+    height: auto; } }
+
 .want__wrapper {
   width: 1408px;
   margin: 0 auto;
@@ -1813,6 +1873,10 @@ body {
   @media (max-width: 768px) {
     .want__wrapper {
       width: 490px; } }
+  @media (max-width: 640px) {
+    .want__wrapper {
+      width: 370px;
+      background-color: green; } }
   .want__wrapper h2 {
     text-transform: uppercase;
     font-size: 70px;

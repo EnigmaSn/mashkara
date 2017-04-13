@@ -278,3 +278,16 @@
   }
 }
 
+@media #{$tablet2-widths} {
+  .mashkara-look {
+    &__wrapper {
+    }
+    &__crab {
+      img {
+        padding-left: 0px;
+      }
+
+    }
+  }
+}
+

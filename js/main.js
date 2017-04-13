@@ -1,3 +1,21 @@
+// ГАМБУРГЕР ДЕСКТОП ЦВЕТ
+
+var bar = $(".bar");
+
+// window.onload = function() {
+//   setInterval(function() {
+//     window.scrollTo(0, 623);
+//     bar.css('background', '#000');
+//     // barAfter.css('background', '#000');
+//     // barBefore.css('background', '#000');
+//   }, 500);
+//   setInterval(function() {
+//     window.scrollTo(0, 0);
+//     bar.css('background', '#fff');
+//   }, 2000);
+// };
+
+
 // Хедер в мобильнике
 $(document).ready(function() {
 
@@ -74,16 +92,19 @@ $('.hamburger-menu').on('click', function() {
 // ОТКРЫТИЕ МЕНЮ MOBILE
 // починить
 var mob_menu_button = document.querySelector(".h_hamburger-mob");
+var top_menu = document.querySelector('.page-header__top-wrapper');
 var mob_menu = document.querySelector(".page-header__mob-open");
 
 mob_menu_button.addEventListener("click", function(event) {
   if (mob_menu.classList.contains(".open-mob")) {
     event.preventDefault();
     console.log("клик таки");
+    top_menu.css('background', '#000');
     mob_menu.classList.remove(".open-mob");
   }
   else {
     event.preventDefault();
+    top_menu.css('background', '#efefef');
     mob_menu.classList.add(".open-mob");
   }
 });
