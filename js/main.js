@@ -62,12 +62,7 @@ $(document).ready(function() {
       // Присваеваем текущее значение скролла предыдущему
       scrollPrev = scrolled;
     }
-
   });
-
-
-
-
 });
 
 //MENU BUTTON
@@ -76,18 +71,31 @@ $('.hamburger-menu').on('click', function() {
   $('.menu').toggleClass('open');
 });
 
-// ОТКРЫТИЕ МЕНЮ
+// ОТКРЫТИЕ МЕНЮ MOBILE
+// починить
+var mob_menu_button = document.querySelector(".h_hamburger-mob");
+var mob_menu = document.querySelector(".page-header__mob-open");
+
+mob_menu_button.addEventListener("click", function(event) {
+  if (mob_menu.classList.contains(".open-mob")) {
+    event.preventDefault();
+    console.log("клик таки");
+    mob_menu.classList.remove(".open-mob");
+  }
+  else {
+    event.preventDefault();
+    mob_menu.classList.add(".open-mob");
+  }
+});
+
+// ОТКРЫТИЕ МЕНЮ ДЕСКТОП
 var menu_button = document.querySelector(".hamburger-menu");
 var menu = document.querySelector(".menu");
 
-// отлавливает событие
 menu_button.addEventListener("click", function(event) {
   if (menu.classList.contains(".open")) {
-    // отмена действия по умолчанию
     event.preventDefault();
-    // вывод в консоль
     console.log("клик таки");
-    // без точки, Карл, ибо этот метод работает только с классами
     menu.classList.remove(".open");
   }
   else {

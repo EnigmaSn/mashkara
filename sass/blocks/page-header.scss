@@ -1,5 +1,6 @@
 .page-header {
   //min-height: 820px;
+  z-index: 9000;
   &__wrapper {
     position: relative;
     //@include container;
@@ -124,16 +125,8 @@
     position: fixed;
     top: 30px;
     right: 90px;
+    z-index: 9000;
   }
-  //&__hamburger {
-  //  background-image: url("../img/spritesheet.png");
-  //  background-repeat: no-repeat;
-  //  display: block;
-  //  width: 30px;
-  //  height: 19px;
-  //  background-position: -5px -87px;
-  //  z-index: 200;
-  //}
 
   /*HAMBURGER*/
   .hamburger-menu {
@@ -526,6 +519,7 @@
         width: 30px;
         border-radius: 2px;
         height: 2px;
+        /* top: 2px; */
         background: #000;
       }
 
@@ -560,7 +554,8 @@
       .bar.animate:after {
         top: 0;
         width: 30px;
-        left: 0;
+        top: 0px;
+        left: 0px;
         transform: rotate(45deg);
         transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
       }
@@ -568,29 +563,37 @@
       .bar.animate:before {
         bottom: 0;
         transform: rotate(-45deg);
-        width: 42px;
+        width: 30px;
         top: 0px;
         left: 0px;
         transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
       }
-      .hamburger-menu{
-        -webkit-transition:all .3s ease;
-        -moz-transition:all .3s ease;
-        -o-transition:all .35s ease;
-        -ms-transition:all .3s ease;
+      .hamburger-menu {
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .35s ease;
+        -ms-transition: all .3s ease;
       }
-      .hamburger-menu:hover{
+      .hamburger-menu:hover {
         opacity: .7;
-        -webkit-transition:all .3s ease;
-        -moz-transition:all .3s ease;
-        -o-transition:all .35s ease;
-        -ms-transition:all .3s ease;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -o-transition: all .35s ease;
+        -ms-transition: all .3s ease;
       }
     }
 
-    &__mob-open {
+    .page-header__mob-open {
       display: none;
       background-color: #efefef;
+    }
+    .page-header__mob-open .open-mob {
+      display: block;
+      z-index: 501;
+      -webkit-transition: all .3s ease;
+      -moz-transition: all .3s ease;
+      -o-transition: all .35s ease;
+      -ms-transition: all .3s ease;
     }
     &__menu-wrapper {
       //background-color: #555;
