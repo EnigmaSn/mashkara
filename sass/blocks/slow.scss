@@ -93,3 +93,29 @@
     }
   }
 }
+
+@media #{$tablet-widths} {
+  .slow {
+    &__wrapper:after {
+      background-image: none;
+    }
+    &__wrapper {
+      margin: 0 auto;
+      margin-bottom: 75px;
+
+      h2 {
+        font-size: 70px;
+        line-height: 65px;
+        width: 370px;
+        text-align: left;
+      }
+
+      span {
+        font-size: 20px;
+        line-height: 30px;
+        width: 370px;
+        text-align: left;
+      }
+    }
+  }
+}

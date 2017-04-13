@@ -32,6 +32,9 @@
           color: #aaadae;
           text-decoration: underline;
         }
+        a:hover {
+          color: #fff;
+        }
     }
 
   }
@@ -63,6 +66,9 @@
         color: #aaadae;
         text-transform: none;
         font-size: 16px;
+      }
+      a:hover {
+        color: #fff;
       }
     }
   }
@@ -159,6 +165,61 @@
 
         a {
           font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+  .page-footer {
+
+    &__wrapper {
+      width: 490px;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      padding-left: 65px;
+      margin-top: 80px;
+
+      hr {
+        margin: 0;
+        width: 370px;
+      }
+      span {
+        color: #aaadae;
+        margin-top: 14px;
+        line-height: 23px;
+        a {
+          color: #aaadae;
+          text-decoration: underline;
+        }
+      }
+
+    }
+    &__first-menu {
+      flex-direction: column;
+      justify-content: left;
+
+      li {
+        margin: 0;
+      }
+      a {
+        font-size: 18px;
+        line-height: 50px;
+      }
+    }
+
+    &__second-menu {
+      flex-direction: column;
+
+      li {
+        margin-right: 40px;
+        a {
+          color: #aaadae;
+          text-transform: none;
+          font-size: 15px;
+          line-height: 40px;
         }
       }
     }

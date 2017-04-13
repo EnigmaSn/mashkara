@@ -1,0 +1,71 @@
+@media #{$tablet-widths} {
+  .look {
+    @include container;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+    &__1 {
+      height: 450px;
+      width: 370px;
+      background-image: url("../img/slide1.jpg");
+      //outline: 1px solid black;
+      margin-bottom: 25px;
+    }
+    &__2 {
+      height: 450px;
+      width: 370px;
+      background-image: url("../img/slide2.jpg");
+      position: relative;
+
+      div {
+        position: absolute;
+        bottom: 140px;
+        left: 80px;
+        z-index: 101;
+
+        span {
+          color: white;
+          display: block;
+          font-size: 18px;
+          text-transform: uppercase;
+          text-align: center;
+          width: 200px;
+        }
+        span:nth-child(2) {
+          font-size: 90px;
+        }
+      }
+      a {
+        background-image: url("../img/spritesheet.png");
+        width: 176px;
+        height: 44px;
+        background-position: -10px -121px;
+        position: absolute;
+        bottom: 40px;
+        left: 90px;
+        z-index: 101;
+      }
+    }
+    &__2:hover {
+      &:after{
+        content:'';
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.5);
+      }
+      a {
+        left: 110px;
+      }
+    }
+
+    //img {
+    //  margin-bottom: 25px;
+    //}
+
+  }
+}

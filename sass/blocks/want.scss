@@ -99,3 +99,39 @@
     }
   }
 }
+
+@media #{$tablet-widths} {
+  .want {
+    &__wrapper {
+      margin: 0 auto;
+      align-items: center;
+
+      h2 {
+        font-size: 70px;
+        line-height: 65px;
+        width: 370px;
+        text-align: left;
+      }
+      span {
+        font-size: 20px;
+        line-height: 30px;
+        width: 370px;
+        text-align: left;
+      }
+      //a {
+      //  margin-left: -85px;
+      //}
+    }
+    &__desktop {
+      display: none;
+    }
+    &__mob {
+      display: flex;
+
+      margin: 0 auto;
+      margin-bottom: 80px;
+      margin-left: 65px;
+      margin-top: 50px;
+    }
+  }
+}

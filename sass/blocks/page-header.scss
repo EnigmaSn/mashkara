@@ -475,27 +475,19 @@
 
 @media #{$tablet-widths} {
   .page-header {
-    height: 500px;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: relative;
 
     &__mobile {
       display: block;
-      position: relative;
-
-      //left: auto;
-      //margin: 0 auto;
-      //z-index: 7000px;
+      @include container;
+      //position: relative;
     }
 
     &__top-wrapper {
       @include container;
-      //height: 80px;
-      //background-color: darkseagreen;
-      //padding: 0 28px;
       box-sizing: border-box;
-      margin-bottom: 5px;
+      display: flex;
+      flex-direction: row;
     }
     &__logo {
       margin-bottom: 28px;
@@ -504,13 +496,14 @@
     }
 
     &__top {
+      position: fixed;
+      top: 0;
       background-color: #efefef;
-      //margin-bottom: 10px;
-      position: relative;
 
       .hamburger-menu {
-        right: 80px;
+        left: 80%;
         top: 10px;
+        margin: 0;
       }
 
       .bar,
@@ -661,6 +654,20 @@
 
     &__desktop {
       display: none;
+    }
+
+    &__look {
+      @include container;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      //padding-top: 100px;
+
+      img {
+        margin-bottom: 25px;
+      }
+
     }
   }
 }

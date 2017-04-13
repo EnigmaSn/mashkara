@@ -21,8 +21,9 @@
 		width: 450px;
 	}
 	@media #{$tablet-widths} {
-		width: 500px;
-		//background-color: chocolate;
+		width: 490px;
+		//min-width: 90%;
+		//background-color: gray;
 	}
 }
 

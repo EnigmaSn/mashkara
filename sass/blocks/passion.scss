@@ -128,3 +128,40 @@
     }
   }
 }
+@media #{$tablet-widths} {
+  .passion {
+    &__wrapper {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 80px;
+      div {
+        min-width: 370px;
+        margin: 0 auto;
+        margin-top: 50px;
+        position: relative;
+      }
+
+      h3 {
+        font-size: 50px;
+        line-height: 60px;
+        width: 250px;
+        margin-bottom: 45px;
+      }
+      span {
+        font-size: 20px;
+        line-height: 30px;
+        //min-width: 370px;
+        //max-width: 370px;
+        text-align: left;
+      }
+    }
+    &__karp-mob {
+      display: flex;
+      margin: 0 auto;
+    }
+    &__karp-desktop {
+      display: none;
+    }
+  }
+}

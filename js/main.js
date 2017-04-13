@@ -1,7 +1,7 @@
 // Хедер в мобильнике
 $(document).ready(function() {
 
-  var header = $(".page-header__mobile"); // Меню
+  var header = $(".page-header__top"); // Меню
   var scrollPrev = 0 // Предыдущее значение скролла
 
   $(window).scroll(function() {

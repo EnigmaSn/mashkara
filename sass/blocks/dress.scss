@@ -119,3 +119,36 @@
     }
   }
 }
+
+@media #{$tablet-widths} {
+  .dress {
+    &__wrapper {
+      margin: 0 auto;
+      flex-direction: column;
+      margin-bottom: 30px;
+
+      img {
+        height: 100%;
+        width: 370px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
+      div {
+        width: 370px;
+        margin: 0 auto;
+      }
+      h3 {
+        font-size: 50px;
+        line-height: 60px;
+        //width: 200px;
+        margin-bottom: 45px;
+      }
+      span {
+        font-size: 20px;
+        line-height: 30px;
+        width: 370px;
+        text-align: left;
+      }
+    }
+  }
+}
