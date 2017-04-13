@@ -21,16 +21,17 @@
 		width: 450px;
 	}
 	@media #{$tablet-widths} {
-		width: 490px;
+		width: 470px;
 		//width: 550px;
 		//min-width: 90%;
-		//background-color: gray;
+		//background-color: lightgrey;
 	}
 	@media #{$tablet2-widths} {
-		width: 370px;
+		width: 430px;
 		//width: 550px;
 		//min-width: 90%;
-		background-color: green;
+		//background-color: green;
+		box-sizing: border-box;
 	}
 }
 

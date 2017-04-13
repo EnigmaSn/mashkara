@@ -27,13 +27,27 @@
     }
   }
   &__crab:hover {
+
+
     img {
       margin-top: 10px;
       margin-bottom: 135px;
+
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      -moz-transition: all 0.5s ease-in-out 0s;
+      -o-transition: all 0.5s ease-in-out 0s;
+      -ms-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;
     }
     span {
       border-bottom: 1px solid $black;
       margin-bottom: -1px;
+
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      -moz-transition: all 0.5s ease-in-out 0s;
+      -o-transition: all 0.5s ease-in-out 0s;
+      -ms-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;
     }
   }
   &__shop {
@@ -43,8 +57,20 @@
     position: relative;
     display: flex;
 
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+
     .mashkara-look__hover {
       display: none;
+
+      -webkit-transition: all 0.5s ease-in-out 0s;
+      -moz-transition: all 0.5s ease-in-out 0s;
+      -o-transition: all 0.5s ease-in-out 0s;
+      -ms-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;
     }
   }
   &__active {
@@ -61,6 +87,11 @@
 
   &__shop:hover {
     background-image: url("../img/green-hover.jpg");
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
 
     .mashkara-look__active {
       display: none;
@@ -284,7 +315,9 @@
     }
     &__crab {
       img {
-        padding-left: 0px;
+        padding-left: 0;
+        width: 360px;
+        //margin-left: -50px;
       }
 
     }
