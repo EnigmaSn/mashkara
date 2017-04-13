@@ -1,6 +1,11 @@
 .page-footer {
   background-color: #58595b;
 
+
+  position: fixed;
+  bottom: 0;
+  z-index: -1;
+
   &__wrapper {
     @include container;
     position: relative;
