@@ -14,6 +14,7 @@
 
     img {
       margin-bottom: 145px;
+      z-index: 0;
     }
 
     span {
@@ -334,10 +335,12 @@
     }
     &__crab {
       img {
-        //padding-left: 0;
         max-width: 310px;
       }
-
+    }
+    &__shop {
+      min-width: 320px;
+      max-width: 320px;
     }
   }
 }

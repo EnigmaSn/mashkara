@@ -119,3 +119,16 @@
     }
   }
 }
+
+@media #{$tablet3-widths} {
+  .slow {
+    &__wrapper {
+      h2 {
+        width: 320px;
+      }
+      span {
+        width: 320px;
+      }
+    }
+  }
+}

@@ -1,13 +1,12 @@
 .page-footer {
   background-color: #58595b;
-
-
   position: fixed;
   bottom: 0;
-  z-index: -1;
+  //z-index: -1;
   height: auto;
 
   &__wrapper {
+    //z-index: 0;
     @include container;
     position: relative;
     display: flex;
@@ -39,6 +38,9 @@
       -ms-transition: all 0.5s ease-in-out 0s;
       transition: all 0.5s ease-in-out 0s;
     }
+    //a:hover {
+    //  color: red;
+    //}
     hr {
       width: 100%;
       margin-top: 40px;
@@ -225,6 +227,9 @@
         a {
           color: #aaadae;
           text-decoration: underline;
+        }
+        a:hover {
+          color: #fff;
         }
       }
 

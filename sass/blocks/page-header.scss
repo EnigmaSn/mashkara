@@ -434,6 +434,21 @@
 @media #{$desktop3-widths} {
   .page-header {
     &__left {
+      //background-color: cornflowerblue;
+
+      img:first-child {
+        margin-top: 30px;
+        margin-bottom: 50px;
+      }
+    }
+    &__box {
+      margin-bottom: 50px;
+    }
+    &__horizontal {
+      margin-bottom: 50px;
+    }
+    &__vertical {
+      margin-bottom: 65px;
     }
 
     &__look1 {

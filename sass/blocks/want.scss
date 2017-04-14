@@ -33,6 +33,7 @@
     display: none;
   }
   &__desktop {
+    z-index: 0;
     margin: 0 auto;
     margin-top: 105px;
     margin-bottom: 90px;
@@ -139,6 +140,30 @@
       margin-bottom: 80px;
       margin-left: 65px;
       margin-top: 50px;
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+  .want {
+    &__wrapper {
+
+      h2 {
+        width: 320px;
+      }
+      span {
+        width: 320px;
+      }
+    }
+    &__desktop {
+      display: none;
+    }
+    &__mob {
+      margin-bottom: 40px;
+      margin-left: 10px;
+      margin-top: 50px;
+      width: 300px;
+      height: auto;
     }
   }
 }

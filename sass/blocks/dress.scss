@@ -10,6 +10,7 @@
     img {
       margin-right: 78px;
       height: 100%;
+      z-index: 0;
     }
     div {
       //min-width: 1400px;
@@ -148,6 +149,30 @@
         line-height: 30px;
         width: 370px;
         text-align: left;
+      }
+    }
+  }
+}
+
+@media #{$tablet3-widths} {
+  .dress {
+    &__wrapper {
+
+      img {
+        height: auto;
+        max-width: 320px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
+      div {
+        min-width: 320px;
+        max-width: 320px;
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
+      h3 {
+        font-size: 40px;
+        line-height: 50px;
       }
     }
   }

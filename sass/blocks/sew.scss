@@ -21,7 +21,7 @@
       position: absolute;
       right: 14px;
       top: -200px;
-      z-index: -1;
+      z-index: 0;
     }
 
 
@@ -31,6 +31,7 @@
       letter-spacing: 5px;
       //text-align: center;
       margin: 0px;
+      z-index: 1;
     }
     a {
       display: none;
@@ -186,12 +187,12 @@
       //}
       a {
         display: block;
-        margin-top: 23px;
+        margin-top: 30px;
         margin-left: 65px;
       }
       div:hover {
         a {
-          margin-top: 23px;
+          margin-top: 30px;
         }
       }
     }
@@ -227,5 +228,30 @@
       //margin: 0 auto;
     }
   }
+}
 
+@media #{$tablet3-widths} {
+  .sew {
+    &__mob {
+      width: 280px;
+      height: auto;
+      margin-left: 40px;
+    }
+    h3 {
+      font-size: 38px;
+      line-height: 66px;
+
+      min-width: 320px;
+      max-width: 320px;
+
+      margin: 0;
+      letter-spacing: 2px;
+    }
+    a {
+      margin-left: 20px;
+    }
+  }
+  &__wrapper {
+  align-self: auto ;
+  }
 }

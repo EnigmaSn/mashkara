@@ -165,3 +165,28 @@
     }
   }
 }
+
+@media #{$tablet3-widths} {
+  .passion {
+    &__wrapper {
+      //margin: 0 auto;
+      //display: flex;
+      //flex-direction: column;
+      //margin-bottom: 80px;
+      div {
+        min-width: 320px;
+      }
+
+      h3 {
+        font-size: 40px;
+        line-height: 50px;
+        //width: 250px;
+        //margin-bottom: 45px;
+      }
+    }
+    &__karp-mob {
+      width: 320px;
+      height: auto;
+    }
+  }
+}
