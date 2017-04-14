@@ -97,23 +97,20 @@ $('.hamburger-menu-mob').on('click', function() {
 
 // ОТКРЫТИЕ МЕНЮ MOBILE
 // починить
-// var mob_menu_button = document.querySelector(".hamburger-mob");
-// // var top_menu = document.querySelector('.page-header__top-wrapper');
-// var mob_menu = document.querySelector(".page-header__mob-open");
-//
-// mob_menu_button.addEventListener("click", function(event) {
-//   if (mob_menu.classList.contains(".open-mob")) {
-//     event.preventDefault();
-//     console.log("клик таки");
-//     // top_menu.css('background', '#000');
-//     mob_menu.classList.remove(".open-mob");
-//   }
-//   else {
-//     event.preventDefault();
-//     top_menu.css('background', '#efefef');
-//     mob_menu.classList.add(".open-mob");
-//   }
-// });
+var mob_menu_button = document.querySelector(".hamburger-menu-mob");
+var mob_menu = document.querySelector(".page-header__mob-open");
+
+mob_menu_button.addEventListener("click", function(event) {
+  if (menu.classList.contains(".open-mob")) {
+    event.preventDefault();
+    console.log("клик моб таки");
+    mob_menu.classList.remove(".open-mob");
+  }
+  else {
+    event.preventDefault();
+    mob_menu.classList.add(".open-mob");
+  }
+});
 
 // ОТКРЫТИЕ МЕНЮ ДЕСКТОП
 var menu_button = document.querySelector(".hamburger-menu");

@@ -687,21 +687,23 @@
       }
     }
 
-    .page-header__mob-open {
-      //display: none;
+    &__mob-open {
+      display: none;
       margin-top: 100px;
       background-color: #efefef;
-    }
-    .page-header__mob-open .open-mob {
-      display: block;
-      z-index: 501;
 
-      -webkit-transition: all 0.5s ease-in-out 0s;
-      -moz-transition: all 0.5s ease-in-out 0s;
-      -o-transition: all 0.5s ease-in-out 0s;
-      -ms-transition: all 0.5s ease-in-out 0s;
-      transition: all 0.5s ease-in-out 0s;
+      .open-mob {
+        display: block;
+        z-index: 501;
+
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+        -ms-transition: all 0.5s ease-in-out 0s;
+        transition: all 0.5s ease-in-out 0s;
+      }
     }
+
     &__menu-wrapper {
       //background-color: #555;
       @include container;
