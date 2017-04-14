@@ -602,7 +602,7 @@
     &__top {
       position: fixed;
       top: 0;
-      //background-color: #efefef;
+      background-color: #efefef;
       .h_hamburger-mob {
         width: 30px;
         height: 30px;
@@ -689,12 +689,20 @@
 
     &__mob-open {
       display: none;
+      //z-index: 9000;
+      position: absolute;
+      top: 0;
+      //left: 0;
+
       margin-top: 100px;
       background-color: #efefef;
 
       .open-mob {
         display: block;
-        z-index: 501;
+
+        //position: fixed;
+        //top: 105px;
+        //left: 0;
 
         -webkit-transition: all 0.5s ease-in-out 0s;
         -moz-transition: all 0.5s ease-in-out 0s;

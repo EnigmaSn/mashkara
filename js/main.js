@@ -20,6 +20,8 @@ var bar = $(".bar");
 $(document).ready(function() {
 
   var header = $(".page-header__top"); // Меню
+  var mobOpen = $(".page-header__mob-open"); // Открытое
+
   var scrollPrev = 0 // Предыдущее значение скролла
 
   $(window).scroll(function() {
@@ -92,24 +94,29 @@ $('.hamburger-menu').on('click', function() {
 //MENU BUTTON MOB
 $('.hamburger-menu-mob').on('click', function() {
   $('.bar-mob').toggleClass('animate');
-  // $('.menu-mob').toggleClass('open-mob');
+  $('.menu-mob').toggleClass('open-mob');
 });
 
 // ОТКРЫТИЕ МЕНЮ MOBILE
 // починить
 var mob_menu_button = document.querySelector(".hamburger-menu-mob");
 var mob_menu = document.querySelector(".page-header__mob-open");
+var top_menu = document.querySelector(".page-header__top-wrapper");
 
 mob_menu_button.addEventListener("click", function(event) {
-  if (menu.classList.contains(".open-mob")) {
+  if (mob_menu.style.display === 'block') {
     event.preventDefault();
     console.log("клик моб таки");
-    mob_menu.classList.remove(".open-mob");
-  }
-  else {
+    mob_menu.style.display='none';
+    top_menu.style.backgroundColor='#fff';
+  } else if (mob_menu.style.display='none'){
     event.preventDefault();
-    mob_menu.classList.add(".open-mob");
+    mob_menu.style.display='block';
+    top_menu.style.backgroundColor='#efefef';
+  } else {
+    console.log("чего еще? 0_0");
   }
+
 });
 
 // ОТКРЫТИЕ МЕНЮ ДЕСКТОП

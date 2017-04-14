@@ -275,3 +275,19 @@
     }
   }
 }
+
+@media #{$tablet3-widths} {
+  .page-footer {
+
+    &__wrapper {
+      max-width: 270px;
+      //margin: 0 auto;
+      padding-left: 20px;
+      hr {
+        margin: 0;
+        width: 100%;
+        max-width: 270px;
+      }
+    }
+  }
+}

@@ -713,7 +713,8 @@ footer,
       margin-left: 28px; }
     .page-header__top {
       position: fixed;
-      top: 0; }
+      top: 0;
+      background-color: #efefef; }
       .page-header__top .h_hamburger-mob {
         width: 30px;
         height: 30px;
@@ -777,11 +778,12 @@ footer,
         -ms-transition: all .3s ease; }
     .page-header__mob-open {
       display: none;
+      position: absolute;
+      top: 0;
       margin-top: 100px;
       background-color: #efefef; }
       .page-header__mob-open .open-mob {
         display: block;
-        z-index: 501;
         transition: all 0.5s ease-in-out 0s; }
     .page-header__menu-wrapper {
       width: 1408px;
@@ -1076,6 +1078,15 @@ footer,
     .page-footer__wrapper hr {
       margin: 0;
       width: 100%; } }
+
+@media (max-width: 430px) {
+  .page-footer__wrapper {
+    max-width: 270px;
+    padding-left: 20px; }
+    .page-footer__wrapper hr {
+      margin: 0;
+      width: 100%;
+      max-width: 270px; } }
 
 .look {
   display: none; }
