@@ -572,9 +572,11 @@
 
     &__top-wrapper {
       @include container;
+      position: relative;
       box-sizing: border-box;
       display: flex;
       flex-direction: row;
+      justify-content: space-between;
       background-color: #fff;
     }
     &__logo {
@@ -587,34 +589,42 @@
       position: fixed;
       top: 0;
       //background-color: #efefef;
+      .h_hamburger-mob {
+        width: 30px;
+        height: 30px;
 
-      .hamburger-menu {
-        left: 80%;
-        top: 10px;
-        margin: 0;
       }
 
-      .bar,
-      .bar:after,
-      .bar:before {
+      .hamburger-menu-mob {
+        margin-right: 60px;
+        width: 30px;
+        height: 30px;
+        position: relative;
+        //margin: 0;
+        top: 0;
+        background-color: cornflowerblue;
+      }
+
+      .bar-mob,
+      .bar-mob:after,
+      .bar-mob:before {
         width: 30px;
         border-radius: 2px;
         height: 2px;
-        /* top: 2px; */
         background: #000;
       }
 
-      .bar {
+      .bar-mob {
         position: relative;
         transform: translateY(33px) translateX(25px);
         background: #000;
         transition: all 0ms 300ms;
       }
-      .bar.animate {
+      .bar-mob.animate {
         background: transparent;
       }
 
-      .bar:before {
+      .bar-mob:before {
         content: "";
         position: absolute;
         left: 0;
@@ -623,7 +633,7 @@
         transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
       }
 
-      .bar:after {
+      .bar-mob:after {
         content: "";
         position: absolute;
         left: 0;
@@ -632,30 +642,29 @@
         transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
       }
 
-      .bar.animate:after {
+      .bar-mob.animate:after {
         top: 0;
         width: 30px;
-        top: 0px;
-        left: 0px;
+        left: 0;
         transform: rotate(45deg);
         transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
       }
 
-      .bar.animate:before {
+      .bar-mob.animate:before {
         bottom: 0;
         transform: rotate(-45deg);
         width: 30px;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
       }
-      .hamburger-menu {
+      .hamburger-menu-mob {
         -webkit-transition: all .3s ease;
         -moz-transition: all .3s ease;
         -o-transition: all .35s ease;
         -ms-transition: all .3s ease;
       }
-      .hamburger-menu:hover {
+      .hamburger-menu-mob:hover {
         opacity: .7;
         -webkit-transition: all .3s ease;
         -moz-transition: all .3s ease;

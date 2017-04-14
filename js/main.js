@@ -89,6 +89,12 @@ $('.hamburger-menu').on('click', function() {
   $('.menu').toggleClass('open');
 });
 
+//MENU BUTTON MOB
+$('.hamburger-menu-mob').on('click', function() {
+  $('.bar-mob').toggleClass('animate');
+  $('.menu-mob').toggleClass('open');
+});
+
 // ОТКРЫТИЕ МЕНЮ MOBILE
 // починить
 var mob_menu_button = document.querySelector(".h_hamburger-mob");
