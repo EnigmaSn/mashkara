@@ -139,7 +139,7 @@ menu_button.addEventListener("click", function(event) {
 //   });
 // });
 
-$("#fadeFooter").fadeIn();
+// $("#fadeFooter").fadeIn();
 
 // ПОЛЬЗОВАТЕЛЬ ДОЛИСТАЛ ДО КОНЦА СТРАНИЦЫ
 $(window).scroll(function()
@@ -147,6 +147,7 @@ $(window).scroll(function()
   if  ($(window).scrollTop() == $(document).height() - $(window).height())
   {
     console.log('ура! конец страницы!');
-    $("#fadeFooter").fadeIn(900);
+    document.getElementById("fadeFooter").style.opacity = "0.5";
+    // $("#fadeFooter").style.opacity = "0";
   }
 });
