@@ -30,8 +30,16 @@
 		width: 430px;
 		//width: 550px;
 		//min-width: 90%;
-		//background-color: green;
+		//background-color: red;
 		box-sizing: border-box;
+	}
+	@media #{$tablet3-widths} {
+        width: 320px;
+		max-width: 320px;
+		//width: 550px;
+		//min-width: 90%;
+		background-color: lightgrey;
+		//box-sizing: border-box;
 	}
 }
 

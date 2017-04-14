@@ -673,7 +673,7 @@
     }
 
     .page-header__mob-open {
-      display: none;
+      //display: none;
       margin-top: 100px;
       background-color: #efefef;
     }
@@ -788,5 +788,15 @@
 
 @media #{$tablet2-widths} {
   .page-header {
+  }
+}
+
+@media #{$tablet2-widths} {
+  .page-header {
+
+    &__menu-wrapper {
+      //background-color: #555;
+      padding-bottom: 10px;
+    }
   }
 }

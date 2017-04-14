@@ -86,3 +86,27 @@
 
   }
 }
+
+@media #{$tablet2-widths} {
+  .look {
+
+    &__1 {
+      width: 320px;
+    }
+    &__2 {
+      width: 320px;
+
+      div {
+        left: 50px;
+      }
+      a {
+        left: 60px;
+      }
+    }
+    &__2:hover {
+      a {
+        left: 80px;
+      }
+    }
+  }
+}

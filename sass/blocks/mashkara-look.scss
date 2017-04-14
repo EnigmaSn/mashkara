@@ -328,3 +328,17 @@
   }
 }
 
+@media #{$tablet3-widths} {
+  .mashkara-look {
+    &__wrapper {
+    }
+    &__crab {
+      img {
+        //padding-left: 0;
+        max-width: 320px;
+      }
+
+    }
+  }
+}
+
