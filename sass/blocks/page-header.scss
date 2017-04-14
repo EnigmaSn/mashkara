@@ -170,11 +170,10 @@
 
   /*HAMBURGER*/
   .hamburger-menu {
-    position: absolute;
-    top: -16px;
-    /* left: 0; */
-    right: -10px;
-    /* bottom: 0; */
+    //position: absolute;
+    //top: -16px;
+    //right: -10px;
+
     margin: auto;
     width: 70px;
     height: 70px;
@@ -592,17 +591,17 @@
       .h_hamburger-mob {
         width: 30px;
         height: 30px;
+        margin-right: 30px;
 
       }
 
       .hamburger-menu-mob {
-        margin-right: 60px;
+
         width: 30px;
         height: 30px;
         position: relative;
-        //margin: 0;
-        top: 0;
-        background-color: cornflowerblue;
+        top: 30px;
+        //background-color: cornflowerblue;
       }
 
       .bar-mob,
@@ -616,7 +615,7 @@
 
       .bar-mob {
         position: relative;
-        transform: translateY(33px) translateX(25px);
+        transform: translateY(15px);
         background: #000;
         transition: all 0ms 300ms;
       }

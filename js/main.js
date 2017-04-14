@@ -131,15 +131,6 @@ menu_button.addEventListener("click", function(event) {
   }
 });
 
-// ЛИПКАЯ СТРЕЛКА В ХЕДЕРЕ
-// $(document).ready(function(){
-//   $("#sticker").sticky({
-//     topSpacing: 0;
-//     stopper: '#stopper';
-//   });
-// });
-
-// $("#fadeFooter").fadeIn();
 
 // ПОЛЬЗОВАТЕЛЬ ДОЛИСТАЛ ДО КОНЦА СТРАНИЦЫ
 $(window).scroll(function()
@@ -147,7 +138,7 @@ $(window).scroll(function()
   if  ($(window).scrollTop() == $(document).height() - $(window).height())
   {
     console.log('ура! конец страницы!');
-    document.getElementById("fadeFooter").style.opacity = "0.5";
+    document.getElementById("fadeFooter").style.opacity = "1";
     // $("#fadeFooter").style.opacity = "0";
   }
 });
