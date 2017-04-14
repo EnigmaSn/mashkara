@@ -92,28 +92,28 @@ $('.hamburger-menu').on('click', function() {
 //MENU BUTTON MOB
 $('.hamburger-menu-mob').on('click', function() {
   $('.bar-mob').toggleClass('animate');
-  $('.menu-mob').toggleClass('open');
+  // $('.menu-mob').toggleClass('open-mob');
 });
 
 // ОТКРЫТИЕ МЕНЮ MOBILE
 // починить
-var mob_menu_button = document.querySelector(".h_hamburger-mob");
-var top_menu = document.querySelector('.page-header__top-wrapper');
-var mob_menu = document.querySelector(".page-header__mob-open");
-
-mob_menu_button.addEventListener("click", function(event) {
-  if (mob_menu.classList.contains(".open-mob")) {
-    event.preventDefault();
-    console.log("клик таки");
-    top_menu.css('background', '#000');
-    mob_menu.classList.remove(".open-mob");
-  }
-  else {
-    event.preventDefault();
-    top_menu.css('background', '#efefef');
-    mob_menu.classList.add(".open-mob");
-  }
-});
+// var mob_menu_button = document.querySelector(".hamburger-mob");
+// // var top_menu = document.querySelector('.page-header__top-wrapper');
+// var mob_menu = document.querySelector(".page-header__mob-open");
+//
+// mob_menu_button.addEventListener("click", function(event) {
+//   if (mob_menu.classList.contains(".open-mob")) {
+//     event.preventDefault();
+//     console.log("клик таки");
+//     // top_menu.css('background', '#000');
+//     mob_menu.classList.remove(".open-mob");
+//   }
+//   else {
+//     event.preventDefault();
+//     top_menu.css('background', '#efefef');
+//     mob_menu.classList.add(".open-mob");
+//   }
+// });
 
 // ОТКРЫТИЕ МЕНЮ ДЕСКТОП
 var menu_button = document.querySelector(".hamburger-menu");
@@ -139,60 +139,14 @@ menu_button.addEventListener("click", function(event) {
 //   });
 // });
 
-// футер паралакс
-function scrollFooter(scrollY, heightFooter)
+$("#fadeFooter").fadeIn();
+
+// ПОЛЬЗОВАТЕЛЬ ДОЛИСТАЛ ДО КОНЦА СТРАНИЦЫ
+$(window).scroll(function()
 {
-  console.log(scrollY);
-  console.log(heightFooter);
-
-  if(scrollY >= heightFooter)
+  if  ($(window).scrollTop() == $(document).height() - $(window).height())
   {
-    $('footer').css({
-      'bottom' : '0px'
-    });
-  }
-  else
-  {
-    $('footer').css({
-      'bottom' : '-' + heightFooter + 'px'
-    });
-  }
-}
-
-$(window).load(function(){
-  var windowHeight        = $(window).height(),
-    footerHeight        = $('footer').height(),
-    heightDocument      = (windowHeight) + ($('.content').height()) + ($('footer').height()) - 20;
-
-  // Definindo o tamanho do elemento pra animar
-  $('#scroll-animate, #scroll-animate-main').css({
-    'height' :  heightDocument + 'px'
-  });
-
-  // Definindo o tamanho dos elementos header e conteúdo
-  $('header').css({
-    'height' : windowHeight + 'px',
-    'line-height' : windowHeight + 'px'
-  });
-
-  $('.wrapper-parallax').css({
-    'margin-top' : windowHeight + 'px'
-  });
-
-  scrollFooter(window.scrollY, footerHeight);
-
-  // ao dar rolagem
-  window.onscroll = function(){
-    var scroll = window.scrollY;
-
-    $('#scroll-animate-main').css({
-      'top' : '-' + scroll + 'px'
-    });
-
-    $('header').css({
-      'background-position-y' : 50 - (scroll * 100 / heightDocument) + '%'
-    });
-
-    scrollFooter(scroll, footerHeight);
+    console.log('ура! конец страницы!');
+    $("#fadeFooter").fadeIn(900);
   }
 });

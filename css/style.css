@@ -765,6 +765,7 @@ footer,
         -o-transition: all .35s ease;
         -ms-transition: all .3s ease; }
     .page-header .page-header__mob-open {
+      display: none;
       margin-top: 100px;
       background-color: #efefef; }
     .page-header .page-header__mob-open .open-mob {
